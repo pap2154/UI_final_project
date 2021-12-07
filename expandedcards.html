@@ -12,6 +12,12 @@
     <link rel="stylesheet" href="assets/css/icon-star-full.css">
     <link rel="stylesheet" href="assets/css/styles.css">
     <style>
+        * {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
         body {font-family: Arial, Helvetica, sans-serif;}
         
 
@@ -35,97 +41,337 @@
         }
         
 
-        .close {
+        .close1 {
           color: #aaaaaa;
           float: right;
           font-size: 28px;
           font-weight: bold;
         }
         
-        .close:hover,
-        .close:focus {
+        .close1:hover,
+        .close1:focus {
           color: #000;
           text-decoration: none;
           cursor: pointer;
         }
+        .close2 {
+          color: #aaaaaa;
+          float: right;
+          font-size: 28px;
+          font-weight: bold;
+        }
+        
+        .close2:hover,
+        .close2:focus {
+          color: #000;
+          text-decoration: none;
+          cursor: pointer;
+        }
+        .close3 {
+          color: #aaaaaa;
+          float: right;
+          font-size: 28px;
+          font-weight: bold;
+        }
+        
+        .close3:hover,
+        .close3:focus {
+          color: #000;
+          text-decoration: none;
+          cursor: pointer;
+        }
+
+        .slider1 {
+            transform: rotate(-270deg);
+            margin-top: 40%;
+            width: 175px;
+            background: #d3d3d3;
+            outline: none;
+            opacity: 0.7;
+            -webkit-transition: .2s;
+            transition: opacity .2s;
+        }
+        .slider2 {
+            transform: rotate(-270deg);
+            margin-top: 50%;
+            width: 220px;
+            background: #d3d3d3;
+            outline: none;
+            opacity: 0.7;
+            -webkit-transition: .2s;
+            transition: opacity .2s;
+        }
+        .button {
+            border-radius: 18px;
+            border: none;
+            color: white;
+            padding: 16px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+        }
+        .button3 {
+            border-radius: 18px;
+            border: none;
+            color: white;
+            padding: 8px 16px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+        }
+
+        .button1 {
+            background-color: white; 
+            color: black; 
+            border: 2px solid gray;
+        }
+
+        .button1:hover {
+            background-color: grey;
+            color: white;
+        }
+
+            .button2 {
+            background-color: #008CBA; 
+            color: white; 
+            border: 2px solid #008CBA;
+        }
+
+            .button2:hover {
+            background-color: white;
+            color: #008CBA;
+        }
+
+
+</style>
         </style>
 </head>
 
 <body>
     <div class="container">
         <div class="row" style="color: #212529;">
-            <div id="myBtn" class="col-md-4" style="cursor: pointer;padding: 42px;border-style: solid;border-radius: 63px;margin: 22px;width: 366px;color: var(--bs-dark);background: rgba(13,66,253,0.43);">
+            <div id="expand" class="col-md-4" style="cursor: pointer;padding: 42px;border-radius: 63px;margin: 22px;width: 366px;background: rgba(13,66,253,0.43);">
                 <h1>Meta<img src="assets/img/metaicon.png" style="width: 45px;margin-left: 12px;"></h1>
                 <p>Software Engineer, University</p><sub>Upcoming: Second Round, Today</sub><i class="fa fa-heart" style="color: var(--bs-blue);margin-left: 0px;width: 100%;text-align: right;"></i>
             </div>
-            <div id="myBtn" class="col-md-4" style="cursor: pointer;padding: 42px;border-style: solid;border-radius: 63px;margin: 22px;width: 366px;color: var(--bs-dark);background: rgba(13,66,253,0.26);">
+            <div id="addcard" class="col-md-4" style="cursor: pointer;padding: 42px;border-radius: 63px;margin: 22px;width: 366px;color: var(--bs-dark);background: rgba(13,66,253,0.26);">
                 <h1>Google<img src="assets/img/Google__G__Logo.svg.png" style="width: 45px;margin-left: 12px;"></h1>
                 <p>Machine Learning Engineer</p><sub>Upcoming: Phone Screen, May 3rd</sub><i class="fa fa-heart" style="margin-left: 0px;color: var(--bs-blue);width: 100%;text-align: right;"></i>
             </div>
-            <div id="myBtn" class="col-md-4" style="cursor: pointer;padding: 42px;border-style: solid;border-radius: 63px;margin: 22px;width: 366px;color: var(--bs-dark);background: rgba(13,66,253,0.25);">
-                <h1>Meta<img src="assets/img/1_d7fYAnWUS9rDntWGdABxPw.png" style="width: 45px;margin-left: 12px;"></h1>
-                <p>iOS Engineer, University</p><sub>Applied: April 22nd</sub><i class="fa fa-heart" style="margin-left: 0px;color: var(--bs-blue);width: 100%;text-align: right;"></i>
+            <div id="addcard-autofill" class="col-md-4" style="cursor: pointer;padding: 42px;border-radius: 63px;margin: 22px;width: 366px;color: var(--bs-dark);background: rgba(13,66,253,0.25);">
+                <h1>Robinhood<img src="assets/img/1_d7fYAnWUS9rDntWGdABxPw.png" style="width: 45px;margin-left: 12px;"></h1>
+                <p>iOS Engineer, University</p><sub>Applied: April 22nd</sub><i class="fa fa-heart" style="margin-left: 0px;color: var(--bs-gray);width: 100%;text-align: right;"></i>
             </div>
             <div class="col-md-4"></div>
             <div class="col-md-4"></div>
         </div>
     </div>
 
-    <!-- The Modal -->
+    <!-- The Modal to view detailed info-->
     <div id="myModal" class="modal">
 
     <!-- Modal content -->
     <div class="modal-content">
         
-        <div class="container" style="border-radius: 18px;border-style: solid;background: rgba(13,104,240,0.4);width: 100%;">
+        <div class="container" style="border-radius: 18px;width: 100%;">
             <div class="row">
-                <span class="close">Close &times;</span>
-                <div class="col-md-6" style="width: 65%;">
+                <span class="close1">&times;</span>
+                <div class="col-md-6" style="width: 55%;">
                     
                     <h1>Meta<img src="assets/img/metaicon.png" style="width: 40px;margin-left: 12px;">&nbsp;</h1>
                     <h1 style="width: 576px;font-size: 26px;">Menlo Park, CA</h1>
                     <h1 style="width: 576px;font-size: 26px;">Software Engineer, University</h1>
                     <p style="color: var(--bs-blue);text-decoration:  underline;">https://www.facebookcareers.com/v2/jobs/650208989022321</p>
-                    <p>Salary Range: 100k - 150k</p>
-                    <p>Description: AR/VR brings together world-class experts to develop and ship groundbreaking products at the intersection of hardware, software, and content. We have a clear mandate to ship products at scale. In particular, seemingly impossible products that define new categories that advance Facebook's mission of connecting the world. The Reality Labs Technology Engineering team has the responsibility for taking breakthroughs in core technology and delivering them to market at scale. The Technology Engineering Camera Team seeks an Imaging Architect who has experience in leading.</p>
+                    <p>Salary  <br><textarea rows='1'>100k - 150k</textarea></p>
+                    <p>Description <br><textarea rows='8' cols="80">AR/VR brings together world-class experts to develop and ship groundbreaking products at the intersection of hardware, software, and content. We have a clear mandate to ship products at scale. In particular, seemingly impossible products that define new categories that advance Facebook's mission of connecting the world. The Reality Labs Technology Engineering team has the responsibility for taking breakthroughs in core technology and delivering them to market at scale. The Technology Engineering Camera Team seeks an Imaging Architect who has experience in leading.</textarea></p>
+                    
                 </div>
-                <div class="col">
-                    <p style="margin-top: 48px;">Created April 15th</p>
-                    <h1 style="font-size: 26px;">Interviews</h1><br>
-                    <p>Phone Interview: April 18th</p>
-                    <p>Onsite Interview: April 25th</p>
-                    <p>Second Round Interview: May 2nd</p>
-                    <p></p>
+    
+                <div class="col-md-2">
+                    <input orient="vertical"type="range" min="1" max="100" value="55" class="slider1" id="myRange">
                 </div>
+                
+                <div class="col" style="padding-top: 20px; position:absolute; margin-left: 65%; width: 35%; height:100%">
+                    <p style="margin-top: 20px;">To Apply</p>
+                    <p>Applied: April 15th</p>
+                    <p>Phone Screen: April 18th</p>
+                    <p>First Round: April 25th</p>
+                    <p>Second Round: May 2nd</p>
+                    <p>Notes <br><textarea rows="5" cols="40"></textarea></p>
+                    <button class="button button1">Discard</button>
+                    <button class="button button2">Favorite<i class="fa fa-heart" style="margin-left: 12px;color: var(--bs-black);"></i></button>
+                </div>
+
             </div>
         </div>
     </div>
+    </div>
+
+
+    <!-- The Modal to add a card -->
+    <div id="myModal2" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+        
+        <div class="container" style="border-radius: 18px;width: 100%;">
+            <div class="row">
+                <span class="close2">&times;</span>
+                
+                <div class="col-md-6" style="width: 55%;">
+                    <textarea rows="1" cols="40" placeholder="Paste job posting URL here: "></textarea><button class="button3 button2" style="margin-left: 12px; vertical-align: top;">Auto-Fill Info</button>
+                    <br><br><h1>Required</h1>
+                    <p style="font-weight: bold;">Company<br><textarea rows='1'></textarea></p>
+                    <p style="font-weight: bold;">Job Title<br><textarea rows='1'></textarea></p>
+                    <br><h3>Optional</h3>
+                    <p>Salary  <br><textarea rows='1' placeholder="80k - 120k"></textarea></p>
+                    <p>Description <br><textarea rows='8' cols="80"></textarea></p>
+                    
+                </div>
+    
+                <div class="col-md-2">
+                    <input orient="vertical"type="range" min="1" max="100" value="1" class="slider2" id="myRange">
+                </div>
+                
+                <div class="col" style="margin-top:15px;padding-top: 20px; position:absolute; margin-left: 65%; width: 35%; height:100%">
+                    <p style="font-weight: bold;">Progress</p>
+                    <p>To Apply</p>
+                    <p>Applied: April 15th</p>
+                    <p>Phone Screen: April 18th</p>
+                    <p>First Round: April 25th</p>
+                    <p>Second Round: May 2nd</p>
+                    <p>Notes <br><textarea rows="5" cols="40"></textarea></p>
+                    <button class="button button1">Discard</button>
+                    <button class="button button2">Favorite<i class="fa fa-heart" style="margin-left: 12px;color: var(--bs-black);"></i></button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- The Modal to add a card, with Meta information automatically filled -->
+    <div id="myModal3" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+        
+        <div class="container" style="border-radius: 18px;width: 100%;">
+            <div class="row">
+                <span class="close3">&times;</span>
+                
+                <div class="col-md-6" style="width: 55%;">
+                    <textarea rows="1" cols="40" placeholder="Paste job posting URL here: ">https://www.facebookcareers.com/v2/jobs/650208989022321</textarea><button class="button3 button2" style="margin-left: 12px; vertical-align: top;">Auto-Fill Info</button>
+                    <br><br><h1>Required</h1>
+                    <p style="font-weight: bold;">Company<br><textarea rows='1'>Meta</textarea></p>
+                    <p style="font-weight: bold;">Job Title<br><textarea rows='1'>Software Engineer, University</textarea></p>
+                    <br><h3>Optional</h3>
+                    <p>Salary  <br><textarea rows='1' placeholder="80k - 120k">100k - 150k</textarea></p>
+                    <p>Description <br><textarea rows='8' cols="80">AR/VR brings together world-class experts to develop and ship groundbreaking products at the intersection of hardware, software, and content. We have a clear mandate to ship products at scale. In particular, seemingly impossible products that define new categories that advance Facebook's mission of connecting the world. The Reality Labs Technology Engineering team has the responsibility for taking breakthroughs in core technology and delivering them to market at scale. The Technology Engineering Camera Team seeks an Imaging Architect who has experience in leading.</textarea></p>
+                    
+                </div>
+    
+                <div class="col-md-2">
+                    <input orient="vertical"type="range" min="1" max="100" value="1" class="slider2" id="myRange">
+                </div>
+                
+                <div class="col" style="margin-top:15px;padding-top: 20px; position:absolute; margin-left: 65%; width: 35%; height:100%">
+                    <p style="font-weight: bold;">Progress</p>
+                    <p>To Apply</p>
+                    <p>Applied: April 15th</p>
+                    <p>Phone Screen: April 18th</p>
+                    <p>First Round: April 25th</p>
+                    <p>Second Round: May 2nd</p>
+                    <p>Notes <br><textarea rows="5" cols="40"></textarea></p>
+                    <button class="button button1">Discard</button>
+                    <button class="button button2">Favorite<i class="fa fa-heart" style="margin-left: 12px;color: var(--bs-black);"></i></button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    </div>
+
 
     </div>
 
     <script>
-    var modal = document.getElementById("myModal");
+
+    // First Modal, detailed view
+
+    var modal1 = document.getElementById("myModal");
 
 
-    var btn = document.getElementById("myBtn");
+    var btn1 = document.getElementById("expand");
 
 
-    var span = document.getElementsByClassName("close")[0];
+    var span1 = document.getElementsByClassName("close1")[0];
 
 
-    btn.onclick = function() {
-    modal.style.display = "block";
+    btn1.onclick = function() {
+        modal1.style.display = "block";
     }
 
 
-    span.onclick = function() {
-    modal.style.display = "none";
+    span1.onclick = function() {
+    modal1.style.display = "none";
+    }
+
+
+    // Second Modal, add a card
+
+    var modal2 = document.getElementById("myModal2");
+
+
+    var btn2 = document.getElementById("addcard");
+
+
+    var span2 = document.getElementsByClassName("close2")[0];
+
+
+    btn2.onclick = function() {
+    modal2.style.display = "block";
+    }
+
+
+    span2.onclick = function() {
+    modal2.style.display = "none";
+    }
+
+
+        // Second Modal, add a card
+
+    var modal3 = document.getElementById("myModal3");
+
+
+    var btn3 = document.getElementById("addcard-autofill");
+
+
+    var span3 = document.getElementsByClassName("close3")[0];
+
+
+    btn3.onclick = function() {
+    modal3.style.display = "block";
+    }
+
+
+    span3.onclick = function() {
+    modal3.style.display = "none";
     }
 
 
     window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
+    if (event.target == modal2 || event.target == modal1 || event.target == modal3) {
+        modal1.style.display = "none";
+        modal2.style.display = "none";
+        modal3.style.display = "none";
     }
     }
     </script>
