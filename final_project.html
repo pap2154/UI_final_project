@@ -45,13 +45,62 @@
                 <div class="calendar_date">
                     <div class="month">April</div>
                     <div class="year">2021</div>
+                    
                 </div>
+                  
+                  <ul class="weekdays">
+                    <li>Mo</li>
+                    <li>Tu</li>
+                    <li>We</li>
+                    <li>Th</li>
+                    <li>Fr</li>
+                    <li>Sa</li>
+                    <li>Su</li>
+                  </ul>
+
+                  <ul class="days">
+                    <li>29</li>
+                    <li>30</li>
+                    <li><span class="active">31</span></li>
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                    <li>6</li>
+                    <li>7</li>
+                    <li>8</li>
+                    <li>9</li>
+                    <li><span class="active">10</span></li>
+                    <li>11</li>
+                    <li><span class="active">12</span></li>
+                    <li>13</li>
+                    <li>14</li>
+                    <li><span class="active">15</span></li>
+                    <li>16</li>
+                    <li>17</li>
+                    <li>18</li>
+                    <li>19</li>
+                    <li>20</li>
+                    <li><span class="active">21</span></li>
+                    <li>22</li>
+                    <li>23</li>
+                    <li><span class="active">24</span></li>
+                    <li>25</li>
+                    <li>26</li>
+                    <li><span class="today">27</span></li>
+                    <li>28</li>
+                    <li>29</li>
+                    <li><span class="active">30</span></li>
+                    li>1</li>
+                    li>2</li>
+                  </ul>
             </div>
         </div>
     </div>
     <div class="container">
         <div class="label">Favorites</div>
-        <div class="dropdown">
+        <div id="expand1" class="dropdown">
             <img src="icons/plus.png" style="width: 24px;height: 24px">
         </div>
         <div class="card_stripe">
@@ -83,6 +132,48 @@
                 </div>
             </div>
         </div>
+        <div id="expanded_stripe" class="card_stripe" style="display:none">
+            <div class="card_container">
+                <div class="job_card">
+                    <div id="google_card" class="col-md-4" style="cursor: pointer;padding: 7%;border-radius: 40px;margin: 0;width: 90%;color: var(--bs-dark);background: rgba(13,66,253,0.15);">
+                        <h1>Google<img src="icons/google.png" style="width: 32px;height: 32px;position: relative;
+                            top: 5px;margin-left: 12px;"></h1>
+                        <p>Machine Learning Engineer</p><sub>Upcoming: Phone Screen, May 3rd</sub><i class="fa fa-heart" style="margin-left: 0px;color: var(--bs-blue);width: 100%;text-align: right;"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="card_container">
+                <div class="job_card">
+                    <div id="robinhood_card" class="col-md-4" style="cursor: pointer;padding: 7%;border-radius: 40px;margin: 0;width: 90%;color: var(--bs-dark);background: rgba(13,66,253,0.15);">
+                        <h1>Robinhood<img src="icons/robinhood_circle.png" style="width: 30px;height: 30px;position: relative;
+                            top: 3px;margin-left: 12px;"></h1>
+                        <p>iOS Engineer, University</p><sub>Applied: April 22nd</sub><i class="fa fa-heart" style="margin-left: 0px;color: var(--bs-gray);width: 100%;text-align: right;"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="card_container">
+                <div class="job_card">
+                    <div id="meta_card" class="col-md-4" style="cursor: pointer;padding: 7%;border-radius: 40px;margin: 0;width: 90%;background: rgba(13,66,253,0.15);">
+                        <h1>Meta<img src="icons/meta.png" style="width: 32px;height: 32px;position: relative;
+                            top: 5px;margin-left: 12px;"></h1>
+                        <p>Software Engineer, University</p><sub>Upcoming: Second Round, Today</sub><i class="fa fa-heart" style="color: var(--bs-blue);margin-left: 0px;width: 100%;text-align: right;"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>  
+            $('.dropdown').click(function(){
+                if (expanded_stripe.style.display !== "none") {
+                    expanded_stripe.style.display = "none";
+                    // $('.dropdown').attr('src', "icons/plus.png");
+                } else {
+                    expanded_stripe.style.display = "block";
+                    // $('.dropdown').attr('src', "icons/minus.png");
+                }
+            });
+        </script>
+
         <div class="label">Upcoming</div>
         <div class="dropdown">
             <img src="icons/plus.png" style="width: 24px;height: 24px">
@@ -150,8 +241,8 @@
             </div>
         </div>
         <div class="label">Applied</div>
-        <div class="icons/plus.png">
-            <img src="icons/expand_arrow.png" style="width: 24px;height: 24px">
+        <div class="dropdown">
+            <img src="icons/plus.png" style="width: 24px;height: 24px">
         </div>
         <div class="card_stripe">
             <div class="card_container">
