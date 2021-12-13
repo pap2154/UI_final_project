@@ -10,6 +10,244 @@
     <script src="final_project.js"></script>
 </head>
 <body>
-
+    <div class="banner">
+        <div class="banner_container">
+            <div class="greeting">
+                <div class="greeting_box">
+                    <div class="text_box">
+                        <div class="greeting_info_box">
+                            <div class="good_morning">Good Morning, Keira!</div>
+                            <div class="upcoming">You have 2 interviews today and 2 more this week. Good luck!</div>
+                        </div>
+                        <div class="interview_info_box">
+                            <div class="interview_box"> 
+                                <div class="interview_text">At 14:00, you have a 30-min 1st round interview with Apple</div>
+                                <button id="join" onclick="location.href='https://us05web.zoom.us/j/84334174778?pwd=bUxWRGFuTDh0M2xteEZCbXY2R2sxdz09'" type="button"  class="interview_button" >Join</button>
+                            </div>
+                            <div class="interview_box">
+                                <div class="interview_text">At 16:00, you have a 45-min 2nd round interview with Meta</div>
+                                <button id="join1" onclick="location.href='https://us05web.zoom.us/j/84334174778?pwd=bUxWRGFuTDh0M2xteEZCbXY2R2sxdz09'" type="button" class="interview_button">Join</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="button_container">
+                    <div class="button_div">
+                        <button id="button_left" type="button" class="button">Add Application</button>
+                    </div>
+                    <div class="button_div">
+                        <button id="button_right" type="button" class="button">Connect Email</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="calendar">
+                <div class="calendar_date">
+                    <div class="month">April</div>
+                    <div class="year">2021</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="label">Favorites</div>
+        <div class="dropdown">
+            <img src="icons/plus.png" style="width: 24px;height: 24px">
+        </div>
+        <div class="card_stripe">
+            <div class="card_container">
+                <div class="job_card">
+                    <div id="meta_card" class="col-md-4" style="cursor: pointer;padding: 7%;border-radius: 40px;margin: 0;width: 90%;background: rgba(13,66,253,0.6);">
+                        <h1>Meta<img src="icons/meta.png" style="width: 32px;height: 32px;position: relative;
+                            top: 5px;margin-left: 12px;"></h1>
+                        <p>Software Engineer, University</p><sub>Upcoming: Second Round, Today</sub><i class="fa fa-heart" style="color: var(--bs-blue);margin-left: 0px;width: 100%;text-align: right;"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="card_container">
+                <div class="job_card">
+                    <div id="google_card" class="col-md-4" style="cursor: pointer;padding: 7%;border-radius: 40px;margin: 0;width: 90%;color: var(--bs-dark);background: rgba(13,66,253,0.4);">
+                        <h1>Google<img src="icons/google.png" style="width: 32px;height: 32px;position: relative;
+                            top: 5px;margin-left: 12px;"></h1>
+                        <p>Machine Learning Engineer</p><sub>Upcoming: Phone Screen, May 3rd</sub><i class="fa fa-heart" style="margin-left: 0px;color: var(--bs-blue);width: 100%;text-align: right;"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="card_container">
+                <div class="job_card">
+                    <div id="robinhood_card" class="col-md-4" style="cursor: pointer;padding: 7%;border-radius: 40px;margin: 0;width: 90%;color: var(--bs-dark);background: rgba(13,66,253,0.25);">
+                        <h1>Robinhood<img src="icons/robinhood_circle.png" style="width: 30px;height: 30px;position: relative;
+                            top: 3px;margin-left: 12px;"></h1>
+                        <p>iOS Engineer, University</p><sub>Applied: April 22nd</sub><i class="fa fa-heart" style="margin-left: 0px;color: var(--bs-gray);width: 100%;text-align: right;"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="label">Upcoming</div>
+        <div class="dropdown">
+            <img src="icons/plus.png" style="width: 24px;height: 24px">
+        </div>
+        <div class="card_stripe">
+            <div class="card_container">
+                <div class="job_card">
+                    <div id="hubspot_card" class="col-md-4" style="cursor: pointer;padding: 7%;border-radius: 40px;margin: 0;width: 90%;background: rgba(13,66,253,0.6);">
+                        <h1>HubSpot<img src="icons/hubspot-1.png" style="width: 30px;height: 30px;position: relative;
+                            top: 3px;margin-left: 12px;"></h1>
+                        <p>Software Engineer II</p><sub>Upcoming: Second Round, Today</sub><i class="fa fa-heart" style="color: var(--bs-blue);margin-left: 0px;width: 100%;text-align: right;"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="card_container">
+                <div class="job_card">
+                    <div id="microsoft_card" class="col-md-4" style="cursor: pointer;padding: 7%;border-radius: 40px;margin: 0;width: 90%;background: rgba(13,66,253,0.5);">
+                        <h1>Microsoft<img src="icons/microsoft.png" style="width: 30px;height: 30px;position: relative;
+                            top: 3px;margin-left: 12px;"></h1>
+                        <p>Software Engineer, Entry Level</p><sub>Upcoming: Second Round, 12/12/21</sub><i class="fa fa-heart" style="color: var(--bs-blue);margin-left: 0px;width: 100%;text-align: right;"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="card_container">
+                <div class="job_card">
+                    <div id="roblox_card" class="col-md-4" style="cursor: pointer;padding: 7%;border-radius: 40px;margin: 0;width: 90%;background: rgba(13,66,253,0.35);">
+                        <h1>Roblox<img src="icons/roblox.png" style="width: 30px;height: 30px;position: relative;
+                            top: 3px;margin-left: 12px;"></h1>
+                        <p>AI Engineer, University</p><sub>Upcoming: First Round, 12/15/21</sub><i class="fa fa-heart" style="color: var(--bs-blue);margin-left: 0px;width: 100%;text-align: right;"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="label">To Apply</div>
+        <div class="dropdown">
+            <img src="icons/plus.png" style="width: 24px;height: 24px">
+        </div>
+        <div class="card_stripe">
+            <div class="card_container">
+                <div class="job_card">
+                    <div id="apple_card" class="col-md-4" style="cursor: pointer;padding: 7%;border-radius: 40px;margin: 0;width: 90%;background: rgba(13,66,253,0.6);">
+                        <h1>Apple<img src="icons/apple-logo.png" style="width: 30px;height: 30px;position: relative;
+                            top: 3px;margin-left: 12px;"></h1>
+                        <p>Software Engineer I</p><sub>Deadline: Today</sub><i class="fa fa-heart" style="color: var(--bs-blue);margin-left: 0px;width: 100%;text-align: right;"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="card_container">
+                <div class="job_card">
+                    <div id="atlassian_card" class="col-md-4" style="cursor: pointer;padding: 7%;border-radius: 40px;margin: 0;width: 90%;background: rgba(13,66,253,0.5);">
+                        <h1>Atlassian<img src="icons/atlassian.png" style="width: 30px;height: 30px;position: relative;
+                            top: 3px;margin-left: 12px;"></h1>
+                        <p>AI Engineer, University</p><sub>Deadline: 12/30/21</sub><i class="fa fa-heart" style="color: var(--bs-blue);margin-left: 0px;width: 100%;text-align: right;"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="card_container">
+                <div class="job_card">
+                    <div id="paypal_card" class="col-md-4" style="cursor: pointer;padding: 7%;border-radius: 40px;margin: 0;width: 90%;background: rgba(13,66,253,0.35);">
+                        <h1>Paypal<img src="icons/paypal-logo.png" style="width: 30px;height: 30px;position: relative;
+                            top: 3px;margin-left: 12px;"></h1>
+                        <p>Software Engineer, Entry Level</p><sub>Deadline: 5/1/22</sub><i class="fa fa-heart" style="color: var(--bs-blue);margin-left: 0px;width: 100%;text-align: right;"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="label">Applied</div>
+        <div class="icons/plus.png">
+            <img src="icons/expand_arrow.png" style="width: 24px;height: 24px">
+        </div>
+        <div class="card_stripe">
+            <div class="card_container">
+                <div class="job_card">
+                    <div id="dropbox_card" class="col-md-4" style="cursor: pointer;padding: 7%;border-radius: 40px;margin: 0;width: 90%;background: rgba(13,66,253,0.6);">
+                        <h1>DropBox<img src="icons/dropbox.png" style="width: 30px;height: 30px;position: relative;
+                            top: 3px;margin-left: 12px;"></h1>
+                        <p>Back End Developer</p><sub>Applied: 7/31/21</sub><i class="fa fa-heart" style="color: var(--bs-blue);margin-left: 0px;width: 100%;text-align: right;"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="card_container">
+                <div class="job_card">
+                    <div id="aws_card" class="col-md-4" style="cursor: pointer;padding: 7%;border-radius: 40px;margin: 0;width: 90%;background: rgba(13,66,253,0.5);">
+                        <h1>AWS<img src="icons/aws.png" style="width: 40px;height: 30px;position: relative;
+                            top: 3px;margin-left: 12px;"></h1>
+                        <p>Software Engineer, Entry Level</p><sub>Applied: 10/10/21</sub><i class="fa fa-heart" style="color: var(--bs-blue);margin-left: 0px;width: 100%;text-align: right;"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="card_container">
+                <div class="job_card">
+                    <div id="netflix_card" class="col-md-4" style="cursor: pointer;padding: 7%;border-radius: 40px;margin: 0;width: 90%;background: rgba(13,66,253,0.35);">
+                        <h1>Netflix<img src="icons/netflix.png" style="width: 30px;height: 30px;position: relative;
+                            top: 3px;margin-left: 12px;"></h1>
+                        <p>Machine Learning, New Grad</p><sub>Applied: 12/15/21</sub><i class="fa fa-heart" style="color: var(--bs-blue);margin-left: 0px;width: 100%;text-align: right;"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="label">Accepted</div>
+        <div class="dropdown">
+            <img src="icons/plus.png" style="width: 24px;height: 24px">
+        </div>
+        <div class="card_stripe">
+            <div class="card_container">
+                <div class="job_card">
+                    <div id="snowflake_card" class="col-md-4" style="cursor: pointer;padding: 7%;border-radius: 40px;margin: 0;width: 90%;background: rgba(13,66,253,0.6);">
+                        <h1>Snowflake<img src="icons/snowflake.png" style="width: 30px;height: 30px;position: relative;
+                            top: 3px;margin-left: 12px;"></h1>
+                        <p>Software Engineer, New Grad</p><sub>Confirm by: 1/4/22</sub><i class="fa fa-heart" style="color: var(--bs-blue);margin-left: 0px;width: 100%;text-align: right;"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="card_container">
+                <div class="job_card">
+                    <div id="doordash_card" class="col-md-4" style="cursor: pointer;padding: 7%;border-radius: 40px;margin: 0;width: 90%;background: rgba(13,66,253,0.5);">
+                        <h1>DoorDash<img src="icons/doordash.png" style="width: 30px;height: 30px;position: relative;
+                            top: 3px;margin-left: 12px;"></h1>
+                        <p>AI Engineer, University</p><sub>Confirm by: 1/31/22</sub><i class="fa fa-heart" style="color: var(--bs-blue);margin-left: 0px;width: 100%;text-align: right;"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="card_container">
+                <div class="job_card">
+                    <div id="databricks_card" class="col-md-4" style="cursor: pointer;padding: 7%;border-radius: 40px;margin: 0;width: 90%;background: rgba(13,66,253,0.35);">
+                        <h1>Databricks<img src="icons/Databricks-logo.png" style="width: 30px;height: 30px;position: relative;
+                            top: 3px;margin-left: 12px;"></h1>
+                        <p>Data Scientist, New Grad</p><sub>Upcoming: First Round, 12/15/21</sub><i class="fa fa-heart" style="color: var(--bs-blue);margin-left: 0px;width: 100%;text-align: right;"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="label">Declined</div>
+        <div class="dropdown">
+            <img src="icons/plus.png" style="width: 24px;height: 24px">
+        </div>
+        <div class="card_stripe">
+            <div class="card_container">
+                <div class="job_card">
+                    <div id="jetbrains_card" class="col-md-4" style="cursor: pointer;padding: 7%;border-radius: 40px;margin: 0;width: 90%;background: rgba(13,66,253,0.6);">
+                        <h1>JetBrains<img src="icons/jetbrains.png" style="width: 30px;height: 30px;position: relative;
+                            top: 3px;margin-left: 12px;"></h1>
+                        <p>DevOps</p><sub>Declined: 9/9/21</sub><i class="fa fa-heart" style="color: var(--bs-blue);margin-left: 0px;width: 100%;text-align: right;"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="card_container">
+                <div class="job_card">
+                    <div id="seatgeek_card" class="col-md-4" style="cursor: pointer;padding: 7%;border-radius: 40px;margin: 0;width: 90%;background: rgba(13,66,253,0.5);">
+                        <h1>Seat Geek<img src="icons/seatgeek.png" style="width: 30px;height: 30px;position: relative;
+                            top: 3px;margin-left: 12px;"></h1>
+                        <p>Software Engineer, Entry Level</p><sub>Declined: 10/10/21</sub><i class="fa fa-heart" style="color: var(--bs-blue);margin-left: 0px;width: 100%;text-align: right;"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="card_container">
+                <div class="job_card">
+                    <div id="discovery_card" class="col-md-4" style="cursor: pointer;padding: 7%;border-radius: 40px;margin: 0;width: 90%;background: rgba(13,66,253,0.35);">
+                        <h1>Discovery Inc<img src="icons/discovery.png" style="width: 30px;height: 30px;position: relative;
+                            top: 3px;margin-left: 12px;"></h1>
+                        <p> Software Engineer I</p><sub>Upcoming: First Round, 12/12/21</sub><i class="fa fa-heart" style="color: var(--bs-blue);margin-left: 0px;width: 100%;text-align: right;"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
