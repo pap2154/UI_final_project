@@ -403,7 +403,7 @@
                         <span class="close2">&times;</span>
                         
                         <div class="col-md-6" style="width: 55%;">
-                            <textarea rows="1" cols="40" placeholder="Paste job posting URL here: "></textarea><button class="button3j button2j" style="margin-left: 12px; vertical-align: top;">Auto-Fill Info</button>
+                            <textarea rows="1" cols="40" placeholder="Paste job posting URL here: "></textarea><button id="autofillapp" class="button3j button2j" style="margin-left: 12px; vertical-align: top;">Auto-Fill Info</button>
                             <br><br><h1>Required</h1>
                             <p style="font-weight: bold;">Company<br><textarea rows='1' cols="40"></textarea></p>
                             <p style="font-weight: bold;">Job Title<br><textarea rows='1' cols="40"></textarea></p>
@@ -518,12 +518,12 @@
                 }
             
             
-                    // Second Modal, add a card
+                // Third Modal, add a card - autofill
             
                 var modal3 = document.getElementById("myModal3");
             
             
-                var btn3 = document.getElementById("button_right");
+                var btn3 = document.getElementById("autofillapp");
             
             
                 var span3 = document.getElementsByClassName("close3")[0];
